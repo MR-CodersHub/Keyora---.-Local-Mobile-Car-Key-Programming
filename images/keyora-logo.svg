@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 54" width="260" height="54">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="emblemDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2433"/>
+      <stop offset="100%" stop-color="#0f1115"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Automotive Key Fob & Shield Emblem -->
+  <g transform="translate(3, 3)">
+    <!-- Base Charcoal Emblem Box -->
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="url(#emblemDark)" stroke="url(#goldGradient)" stroke-width="1.8"/>
+    
+    <!-- Modern Smart Key Fob Contour -->
+    <path d="M24 8 C16.5 8 11.5 13 11.5 21 C11.5 27 15.5 32 20.5 34.5 L20.5 40 L23.5 43 L26.5 40 L28.5 40 L28.5 37.5 L26.5 37.5 L26.5 34.7 C32.5 32.5 36.5 27 36.5 21 C36.5 13 31.5 8 24 8 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Central Security Keyhole & Core Pin -->
+    <circle cx="24" cy="19" r="3.8" fill="url(#goldGradient)"/>
+    <path d="M22.5 20 L25.5 20 L26.2 27 L21.8 27 Z" fill="url(#goldGradient)"/>
+    
+    <!-- Wireless RF Signal Waves -->
+    <path d="M19 12 C22 10.5 26 10.5 29 12" fill="none" stroke="url(#goldGradient)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="24" cy="40.5" r="1.2" fill="#fcd34d"/>
+  </g>
+
+  <!-- Clean Bold Typography -->
+  <!-- "KEY" in Dark Charcoal + "ORA" in Gold -->
+  <text x="62" y="32" font-family="'Outfit', 'Montserrat', 'Inter', -apple-system, sans-serif" font-size="27" font-weight="900" letter-spacing="0.5" fill="#0f1115">KEY<tspan fill="url(#goldGradient)">ORA</tspan></text>
+
+  <!-- Subtitle "MOBILE AUTO LOCKSMITH" -->
+  <text x="63" y="46" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="800" letter-spacing="1.8" fill="#475569">MOBILE AUTO LOCKSMITH</text>
+</svg>

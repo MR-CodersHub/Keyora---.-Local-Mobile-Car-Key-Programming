@@ -1,0 +1,760 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyora | 24/7 Mobile Workshop Van &amp; Instant Dispatch</title>
+  <meta name="description" content="Keyora instant mobile automotive locksmith dispatch. Computerized key cutting &amp; fob programming right at your vehicle. 20-min response time for all vehicle makes.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Emergency Topbar -->
+  <div class="emergency-topbar">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="emergency-tag"><span class="pulse-indicator"></span> Mobile Units On Patrol</span>
+        <span>Average Response Time: <strong class="text-gold">18-25 Mins</strong></span>
+      </div>
+      <div class="topbar-info">
+        <span>Licensed, Bonded &amp; Insured Auto Locksmiths</span>
+        <span>&bull;</span>
+        <span>Fast GPS Fleet Routing Across Greater Metro</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerBrandLogo" title="Keyora Mobile Auto Locksmith">
+        <img src="images/keyora-logo.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-light" width="220" height="46">
+        <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-dark" width="220" height="46">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link active">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing Guide</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Right: Theme Toggle, RTL Toggle, Call Now Button, Mobile Toggle -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Light/Dark Theme">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">Dark</span>
+        </button>
+
+        <!-- RTL Toggle Button -->
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle RTL Direction" title="Toggle RTL / LTR Direction">
+          <span class="rtl-text">RTL</span>
+        </button>
+        <!-- CTA Button in LAST Position -->
+        <a href="contact.html" class="btn btn-call-now header-cta-btn" id="headerCtaBtn"
+          title="Contact Keyora 24/7 Dispatch">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <span>Contact Us</span>
+        </a>
+
+
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="180" height="38">
+      <button class="mobile-drawer-close" aria-label="Close Mobile Navigation"
+        style="background:none; border:none; color:#fff; font-size:1.8rem; cursor:pointer; line-height:1;">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home-2.html" class="active">Home 2</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing Guide</a>
+      <a href="blog.html">Blog &amp; Guides</a>
+      <a href="contact.html">Contact &amp; Emergency</a>
+    </div>
+    <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px;">
+      <a href="tel:+18005555397" class="btn btn-call-now" style="width:100%; justify-content:center;">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Call Now: (800) 555-5397</span>
+      </a>
+      <a href="contact.html" class="btn btn-gold" style="width:100%; justify-content:center;">
+        Book Service Online
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: Full-Width Automotive Hero with Instant Dispatch Selector -->
+    <section class="hero-fullwidth" id="home2Hero">
+      <img src="images/mobile_locksmith_van.jpg" alt="Mobile Auto Locksmith Service Van" class="hero-fullwidth-bg">
+      <div class="hero-fullwidth-overlay"></div>
+
+      <div class="container">
+        <div class="hero-fullwidth-content">
+          <div class="badge-diagonal badge-diagonal-dark">Fully Equipped Mobile Workshop Fleet</div>
+          <h1 class="hero-fullwidth-headline">
+            THE CAR KEY DEALERSHIP <br>
+            <span class="text-gold">THAT COMES DIRECTLY TO YOU</span>
+          </h1>
+          <p class="hero-fullwidth-desc">
+            No towing, no dealer markups, no waiting days for backordered keys. Our licensed automotive master technicians carry factory CNC cutters and computer programmers directly to your curbside.
+          </p>
+
+          <!-- Instant Dispatch Search / Booking Bar -->
+          <div class="instant-dispatch-bar">
+            <form id="instantDispatchForm">
+              <div class="dispatch-bar-grid">
+                <div class="dispatch-field">
+                  <label for="quickMake">Vehicle Make</label>
+                  <select id="quickMake" required>
+                    <option value="">Select Make...</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes-Benz</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Hyundai">Hyundai / Kia</option>
+                    <option value="Other">Other Make</option>
+                  </select>
+                </div>
+
+                <div class="dispatch-field">
+                  <label for="quickModel">Model &amp; Year</label>
+                  <input type="text" id="quickModel" placeholder="e.g. Camry 2022" required>
+                </div>
+
+                <div class="dispatch-field">
+                  <label for="quickKeyType">Key Type Needed</label>
+                  <select id="quickKeyType" required>
+                    <option value="smart">Push-to-Start Smart Key</option>
+                    <option value="fob">Remote Key Fob</option>
+                    <option value="transponder">Transponder Chip Key</option>
+                    <option value="lockout">Emergency Lockout Only</option>
+                  </select>
+                </div>
+
+                <div class="dispatch-field">
+                  <label for="quickZip">Your Current Location / ZIP</label>
+                  <input type="text" id="quickZip" placeholder="ZIP or Street" required>
+                </div>
+
+                <div>
+                  <label style="opacity:0; display:block; font-size:0.75rem; margin-bottom:6px;">Submit</label>
+                  <button type="submit" class="btn btn-gold" style="width:100%; padding:12px 20px;">
+                    FIND LOCAL TECH
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Mobile Locksmith Service Highlights -->
+    <section class="section-padding bg-light-section" id="serviceHighlights">
+      <div class="container">
+        <div class="stats-grid-4">
+          <!-- Card 1: Emergency Response -->
+          <div class="stat-metric-card">
+            <div class="stat-metric-top">
+              <span class="metric-status-pill status-urgent">
+                <span class="pulse-indicator"></span> 24/7 Priority
+              </span>
+              <div class="stat-metric-icon" title="Rapid Emergency Response">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm.5 13H11v-5h1.5v5zm0-7H11V6h1.5v2z"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="stat-metric-number">18-25<span class="stat-unit">mins</span></div>
+              <div class="stat-metric-title">Average Arrival Time</div>
+              <div class="stat-metric-desc">GPS-tracked mobile dispatch vans on-call for swift emergency response.</div>
+            </div>
+          </div>
+
+          <!-- Card 2: Fleet Coverage -->
+          <div class="stat-metric-card">
+            <div class="stat-metric-top">
+              <span class="metric-status-pill status-fleet">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Metro Wide
+              </span>
+              <div class="stat-metric-icon" title="Fleet Coverage Area">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="stat-metric-number">50+<span class="stat-unit">miles</span></div>
+              <div class="stat-metric-title">Metropolitan Radius</div>
+              <div class="stat-metric-desc">Full curbside service across downtown, suburbs &amp; highway corridors.</div>
+            </div>
+          </div>
+
+          <!-- Card 3: Vehicle Coverage -->
+          <div class="stat-metric-card">
+            <div class="stat-metric-top">
+              <span class="metric-status-pill status-coverage">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                All Makes
+              </span>
+              <div class="stat-metric-icon" title="Vehicle Coverage">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="stat-metric-number">98.5%<span class="stat-unit">supported</span></div>
+              <div class="stat-metric-title">Makes &amp; Models</div>
+              <div class="stat-metric-desc">Advanced EEPROM &amp; OBD2 tools for domestic, Asian &amp; European cars.</div>
+            </div>
+          </div>
+
+          <!-- Card 4: Warranty Guarantee -->
+          <div class="stat-metric-card">
+            <div class="stat-metric-top">
+              <span class="metric-status-pill status-warranty">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                100% Guaranteed
+              </span>
+              <div class="stat-metric-icon" title="Warranty Guarantee">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              </div>
+            </div>
+            <div>
+              <div class="stat-metric-number">365<span class="stat-unit">days</span></div>
+              <div class="stat-metric-title">Hardware &amp; Sync Warranty</div>
+              <div class="stat-metric-desc">Complete 1-year replacement warranty on all key fobs, chips &amp; cutting.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Service Categories (With Diagonal Badges & Hover Elevation) -->
+    <section class="section-padding" id="serviceCategories">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-diagonal">
+            <span class="pulse-indicator"></span> Field-Ready Solutions
+          </div>
+          <h2 class="section-title">Automotive Key Categories We Service</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Every mobile van carries high-security key blanks, transponder chips, and OEM fobs for domestic, Asian, and European vehicles.
+          </p>
+        </div>
+
+        <div class="services-grid-4">
+          <!-- Category 1: Smart Keys -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="images/smart_fob_lineup.jpg" alt="Push-to-Start Smart Keys" class="service-card-img" loading="lazy">
+              <div class="service-card-img-overlay"></div>
+              <span class="service-card-badge">&#9733; Proximity &amp; PKE</span>
+              <div class="service-card-price-tag">From $195</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Push-to-Start Smart Keys</h3>
+              <p class="service-card-desc">
+                Proximity keyless entry fobs, remote engine start pairing, trunk release, and push-button ignition programming.
+              </p>
+              <ul class="service-card-features">
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Proximity &amp; push-start sync
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Emergency blade laser cut
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Domestic &amp; foreign luxury makes
+                </li>
+              </ul>
+              <div class="service-card-footer">
+                <span class="service-eta-tag"><span class="pulse-indicator"></span> 20-30 Min ETA</span>
+                <a href="services.html" class="service-action-btn">Get Started &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Flip & Switchblade Keys -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="images/hero_car_key.jpg" alt="Flip and Switchblade Car Keys" class="service-card-img" loading="lazy">
+              <div class="service-card-img-overlay"></div>
+              <span class="service-card-badge">&#9889; Integrated Remote</span>
+              <div class="service-card-price-tag">From $140</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Flip &amp; Switchblade Keys</h3>
+              <p class="service-card-desc">
+                Spring-loaded switchblade keys with integrated remote lock buttons and encrypted internal transponder chips.
+              </p>
+              <ul class="service-card-features">
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  High-tensile spring blade
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Remote keyless locking transmitter
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Encrypted chip programming
+                </li>
+              </ul>
+              <div class="service-card-footer">
+                <span class="service-eta-tag"><span class="pulse-indicator"></span> On-Site Testing</span>
+                <a href="services.html" class="service-action-btn">Get Started &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Laser Track Keys -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="images/key_cutting_machine.jpg" alt="Computerized Laser Key Cutting Machine" class="service-card-img" loading="lazy">
+              <div class="service-card-img-overlay"></div>
+              <span class="service-card-badge">&#9881; CNC Wave Milling</span>
+              <div class="service-card-price-tag">From $120</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">High-Security Laser Track</h3>
+              <p class="service-card-desc">
+                Sidewinder internal wave cut blades for Honda, Ford, Lexus, VW, Audi, GM, BMW, and modern high-security models.
+              </p>
+              <ul class="service-card-features">
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  0.01mm CNC precision cutting
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Internal sidewinder wave tracks
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Factory VIN decoding on-site
+                </li>
+              </ul>
+              <div class="service-card-footer">
+                <span class="service-eta-tag"><span class="pulse-indicator"></span> OE Tolerances</span>
+                <a href="services.html" class="service-action-btn">Get Started &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: ECU Reset -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="images/key_programming_tool.jpg" alt="ECU and BCM Immobilizer Diagnostics Tool" class="service-card-img" loading="lazy">
+              <div class="service-card-img-overlay"></div>
+              <span class="service-card-badge">&#128737; All Keys Lost Expert</span>
+              <div class="service-card-price-tag">From $160</div>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">ECU Immobilizer Reset</h3>
+              <p class="service-card-desc">
+                Anti-theft ECU and BCM reprogramming when all master keys are lost or previous keys have been stolen.
+              </p>
+              <ul class="service-card-features">
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Direct EEPROM micro-reflash
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Erase lost &amp; stolen keys
+                </li>
+                <li>
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  $1,200+ dealer module savings
+                </li>
+              </ul>
+              <div class="service-card-footer">
+                <span class="service-eta-tag"><span class="pulse-indicator"></span> Certified Tech</span>
+                <a href="services.html" class="service-action-btn">Get Started &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3 Guarantee & Brand Bar -->
+        <div class="categories-assurance-bar">
+          <div class="assurance-item">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>All Domestic, Asian &amp; European Makes Supported</span>
+          </div>
+          <div class="assurance-item">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>100% Guaranteed To Start Your Engine Or $0 Charged</span>
+          </div>
+          <div class="assurance-item">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            <span>Zero Towing Required &bull; 20-30 Min On-Site Arrival</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Vehicle Key Solutions Showcase with Real Key Imagery -->
+    <section class="section-padding bg-dark-section" id="vehicleKeySolutions">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-image-box">
+            <span class="showcase-tag-badge">Extensive Fob Inventory</span>
+            <img src="images/smart_fob_lineup.jpg" alt="Collection of luxury car smart keys and transponders" width="600" height="420">
+          </div>
+
+          <div class="showcase-content-box">
+            <div class="badge-diagonal badge-diagonal-dark">Complete Stock On Hand</div>
+            <h2 class="section-title text-white">We Carry Over 2,000+ Key Blanks &amp; Fobs In Each Van</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle">
+              Unlike other locksmiths who make you wait for parts to arrive by mail, our mobile workshops are miniature distribution warehouses stocking OEM and certified aftermarket fobs for:
+            </p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:24px 0;">
+              <div style="background:#1c1f26; padding:10px 14px; border-left:3px solid var(--color-gold); font-size:0.88rem; color:#cbd5e1;">
+                <strong>Domestic:</strong> Ford, Chevy, Dodge, Jeep, GMC, Chrysler, RAM
+              </div>
+              <div style="background:#1c1f26; padding:10px 14px; border-left:3px solid var(--color-gold); font-size:0.88rem; color:#cbd5e1;">
+                <strong>Asian:</strong> Toyota, Honda, Nissan, Subaru, Hyundai, Kia, Mazda, Lexus
+              </div>
+              <div style="background:#1c1f26; padding:10px 14px; border-left:3px solid var(--color-gold); font-size:0.88rem; color:#cbd5e1;">
+                <strong>European:</strong> BMW, Mercedes-Benz, Audi, VW, Volvo, Porsche, Land Rover
+              </div>
+              <div style="background:#1c1f26; padding:10px 14px; border-left:3px solid var(--color-gold); font-size:0.88rem; color:#cbd5e1;">
+                <strong>Commercial:</strong> Sprinter, Transit, Work Vans, Fleet Trucks
+              </div>
+            </div>
+
+            <a href="tel:+18005555397" class="btn btn-gold">Check Immediate Stock For Your Car</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Our Process - High-Precision Roadside Workflow -->
+    <section class="section-padding bg-light-section" id="processWorkflow">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-diagonal">Streamlined Roadside Workflow</div>
+          <h2 class="section-title">The Field Technician Dispatch Sequence</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            From initial call to driving away with a programmed key, here is how our professional dispatch operates.
+          </p>
+        </div>
+
+        <div class="process-grid-4">
+          <div class="process-step-card">
+            <div class="step-number-badge">1</div>
+            <h4 class="step-title">GPS Live Tracking</h4>
+            <p class="step-desc">
+              Your service request is assigned to the nearest patrol van. You receive an SMS tracking link with the technician's name and accurate ETA.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number-badge">2</div>
+            <h4 class="step-title">Key Decode &amp; VIN Check</h4>
+            <p class="step-desc">
+              The technician verifies vehicle ownership and reads the ignition mechanical key bitting using optical or Lishi precision decoders.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number-badge">3</div>
+            <h4 class="step-title">CNC Milling &amp; Pairing</h4>
+            <p class="step-desc">
+              The van's CNC laser cutter creates a factory-fresh blade while the OBD diagnostic tablet pairs the new RFID transponder chip.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <div class="step-number-badge">4</div>
+            <h4 class="step-title">Quality Assurance</h4>
+            <p class="step-desc">
+              We test proximity door lock/unlock, trunk pop, push-button ignition, and emergency physical door locks before finalizing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Customer Reviews & Trust Badges -->
+    <section class="section-padding" id="reviewsHome2">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-diagonal">Verified Reviews</div>
+          <h2 class="section-title">What Motorists Say About Our Response</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Over 2,400 five-star ratings across Google, Yelp, and roadside assistance networks.
+          </p>
+        </div>
+
+        <div class="testimonials-grid-3">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">
+                "Locked out with my keys inside my 2023 Ford F-150 in the middle of a torrential downpour. Technician arrived in 20 minutes flat, used specialized tools without touching the window tint, and got me back in warmth. Absolutely outstanding."
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">TG</div>
+              <div class="author-info">
+                <h5>Tyler Gibson</h5>
+                <p>2023 Ford F-150 Roadside Assistance</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">
+                "Lost my only Mercedes-Benz smart fob at the gym. Dealership quoted $620 and said I had to flatbed tow the car to their shop. Keyora came to the parking lot, paired a brand new smart fob in 35 minutes for half the cost. Customer for life!"
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">AM</div>
+              <div class="author-info">
+                <h5>Amanda Miller</h5>
+                <p>Mercedes-Benz C300 Smart Key</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">
+                "Needed two spare transponder keys cut and coded for our family Honda Odyssey. Keyora mobile van stopped by our driveway while I was cooking dinner. 20 minutes later both keys were tested and worked perfectly. Incredibly convenient."
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">CP</div>
+              <div class="author-info">
+                <h5>Carlos Perez</h5>
+                <p>Honda Odyssey Key Duplication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Frequently Asked Questions (Accordion) -->
+    <section class="section-padding bg-light-section" id="faqSectionHome2">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-diagonal">Got Questions?</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle">
+            Everything you need to know about our local mobile car key replacement and roadside dispatch service.
+          </p>
+        </div>
+
+        <div class="faq-accordion-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item active">
+            <button class="faq-question-btn">
+              <span>Can you make a car key if I have lost ALL my original keys?</span>
+              <span class="faq-icon-toggle">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Yes, absolutely! Over 70% of our emergency calls are "all keys lost" situations. Our mobile locksmith vans are equipped to decode the mechanical key cuts directly from your door lock or ignition cylinder and generate the electronic programming using your vehicle's VIN and OBD-II computer port.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Do I need to tow my car to a dealership?</span>
+              <span class="faq-icon-toggle">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                No! You never have to pay for expensive tow trucks or wait days for dealership service appointments. Our mobile van brings the entire key cutting and programming workshop directly to where your car is parkedâ€”at your home, workplace, shopping mall, or highway shoulder.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>How long does the mobile service take once the technician arrives?</span>
+              <span class="faq-icon-toggle">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Standard transponder keys take approximately 15 to 20 minutes to cut and program. Modern push-to-start smart proximity keys take approximately 25 to 35 minutes depending on the vehicle security protocol and immobilizer bypass time.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What proof of ownership do I need to provide?</span>
+              <span class="faq-icon-toggle">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                For legal and security reasons, our locksmiths must verify vehicle ownership prior to cutting or coding keys. You will need a valid government-issued photo ID (driverâ€™s license, passport) matching either the vehicle registration, title, or valid insurance card.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Do you provide a warranty on newly cut and programmed keys?</span>
+              <span class="faq-icon-toggle">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>
+                Yes! Every key blank, remote fob, transponder chip, and programming procedure provided by Keyora Solutions includes a comprehensive 365-day (1-year) replacement warranty against electronic malfunction or defect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Emergency Booking Call-To-Action (SMS & Phone Dispatch) -->
+    <section class="section-padding bg-dark-section" id="emergencyDispatchSection" style="border-top:3px solid var(--color-gold);">
+      <div class="container">
+        <div style="max-width:800px; margin:0 auto; text-align:center;">
+          <div class="badge-diagonal badge-diagonal-dark">Emergency Mobile Locksmith</div>
+          <h2 class="section-title text-white">Technicians On Road Ready For Dispatch</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle" style="margin-bottom:32px;">
+            Don't stay stranded in a parking lot or driveway. Call our emergency hotline now for an immediate locked-in quote and 20-minute arrival window.
+          </p>
+
+          <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+            <a href="tel:+18005555397" class="btn btn-gold btn-lg">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (800) 555-KEYS (5397)
+            </a>
+            <a href="contact.html" class="btn btn-outline-gold btn-lg">
+              Book Online Service Request
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid-4">
+        <!-- Col 1: Brand & Description -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo footer-brand-link" aria-label="Keyora Home" title="Keyora Mobile Auto Locksmith">
+            <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="220" height="46">
+          </a>
+          <p class="footer-about-text">
+            Keyora is your trusted local mobile car key programming and replacement service. Fully equipped on-site locksmith vans providing fast, 20-minute roadside dispatch for laser-cut keys, smart transponder fobs, EEPROM reflashing, and damage-free vehicle lockouts.
+          </p>
+          <div class="footer-hotline-box">
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold); font-weight:700; letter-spacing:0.04em;">24/7 Emergency Dispatch</div>
+            <a href="tel:+18005555397" style="font-family:var(--font-heading); font-size:1.35rem; font-weight:900; color:#ffffff; display:inline-flex; align-items:center; gap:8px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (800) 555-5397
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="footer-col">
+          <h4>Key Services</h4>
+          <div class="footer-links-list">
+            <a href="services.html">Push-to-Start Smart Keys</a>
+            <a href="services.html">Remote Fob Programming</a>
+            <a href="services.html">Transponder Chip Coding</a>
+            <a href="services.html">High-Security Laser Cutting</a>
+            <a href="services.html">Emergency Car Lockout</a>
+            <a href="services.html">Broken Key Extraction</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home 1 (Classic Split)</a>
+            <a href="home-2.html">Home 2 (Full-Width Hub)</a>
+            <a href="about.html">About Keyora Fleet</a>
+            <a href="pricing.html">Pricing Guide</a>
+            <a href="blog.html">Blog &amp; Tech Articles</a>
+            <a href="contact.html">Contact &amp; Coverage</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Service Areas & Hours -->
+        <div class="footer-col">
+          <h4>Mobile Coverage &amp; Hours</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong style="color:#fff;">Rapid Response:</strong>
+              <div>Metropolitan Downtown, Suburbs, Airport Terminals, Highway Exits</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <div>
+              <strong style="color:#fff;">Hours of Operation:</strong>
+              <div>24 Hours / 7 Days A Week Emergency Roadside Units</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2026 Keyora Solutions LLC. Licensed Auto Locksmith. All Rights Reserved.</div>
+        <div style="display:flex; gap:20px;">
+          <a href="contact.html#privacy">Privacy Policy</a>
+          <a href="contact.html#terms">Terms of Service</a>
+          <a href="contact.html#warranty">Warranty Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

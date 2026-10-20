@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon &amp; System Maintenance | Keyora Automotive Locksmith</title>
+  <meta name="description"
+    content="Keyora is upgrading our digital automotive locksmith dispatch portal. 24/7 emergency roadside key cutting and lockouts remain fully operational via phone dispatch.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="coming-soon-wrapper">
+
+  <!-- Ambient Circuit Grid Background -->
+  <div class="ambient-tech-grid"></div>
+
+  <!-- Header -->
+  <header class="coming-soon-header">
+    <div class="container coming-soon-nav">
+      <a href="index.html" class="brand-logo" title="Keyora Mobile Auto Locksmith">
+        <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="220"
+          height="46">
+      </a>
+
+      <div style="display:flex; align-items:center; gap:16px;">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Light/Dark Theme">
+          <span class="theme-icon">&#127769;</span>
+          <span class="theme-text">Dark</span>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle RTL Direction"
+          title="Toggle RTL / LTR Direction">
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <a href="tel:+18005555397" class="cs-hotline-badge" title="Call Emergency Roadside Dispatch">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg>
+          <span>24/7 Hotline: (800) 555-5397</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Body Content -->
+  <main class="coming-soon-body">
+    <div class="container">
+      <div class="cs-content-box">
+
+        <!-- Mode Switcher: Interactive Pill to toggle between Coming Soon and Maintenance View -->
+        <div class="cs-mode-switcher" role="tablist" aria-label="Display Mode Selector">
+          <button class="cs-mode-btn active" id="btnModeComingSoon" onclick="switchMode('coming-soon')" role="tab"
+            aria-selected="true">
+            <span>&#128640;</span> Coming Soon
+          </button>
+          <button class="cs-mode-btn" id="btnModeMaintenance" onclick="switchMode('maintenance')" role="tab"
+            aria-selected="false">
+            <span>&#128736;&#65039;</span> System Maintenance
+          </button>
+        </div>
+
+        <!-- Status Indicator Pill -->
+        <div>
+          <div class="cs-status-indicator" id="csStatusBadge">
+            <span class="status-pulse-dot"></span>
+            <span id="csStatusText">Deploying Keyora 2.0 Telematics Platform</span>
+          </div>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="cs-title" id="csMainTitle">
+          THE FUTURE OF <span class="text-gold">MOBILE CAR KEY</span> DISPATCH IS ARRIVING
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="cs-subtitle" id="csSubtitle">
+          We are preparing our next-generation automotive locksmith dispatch portal. Featuring live GPS patrol tracking,
+          instant transponder quote calculation, and rapid key coding synchronization.
+        </p>
+
+        <!-- Live Countdown Timer -->
+        <div class="cs-countdown-grid" id="csCountdown">
+          <div class="cs-countdown-card">
+            <div class="cs-countdown-number" id="timerDays">14</div>
+            <div class="cs-countdown-label">Days</div>
+          </div>
+          <div class="cs-countdown-card">
+            <div class="cs-countdown-number" id="timerHours">08</div>
+            <div class="cs-countdown-label">Hours</div>
+          </div>
+          <div class="cs-countdown-card">
+            <div class="cs-countdown-number" id="timerMins">42</div>
+            <div class="cs-countdown-label">Minutes</div>
+          </div>
+          <div class="cs-countdown-card">
+            <div class="cs-countdown-number" id="timerSecs">19</div>
+            <div class="cs-countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <!-- Progress Calibration Bar -->
+        <div class="cs-progress-container">
+          <div class="cs-progress-header">
+            <span id="progressLabel">System Calibration &amp; Database Sync</span>
+            <strong id="progressPercent">88% Complete</strong>
+          </div>
+          <div class="cs-progress-track">
+            <div class="cs-progress-fill" id="progressBarFill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- Live Telemetry Checklist Grid -->
+        <div class="cs-telemetry-grid">
+          <div class="cs-telemetry-item">
+            <div class="telemetry-indicator online"></div>
+            <div>
+              <strong id="telemetryItem1Title">Fleet GPS Telemetry</strong>
+              <span id="telemetryItem1Desc">Real-Time Van Tracking Online</span>
+            </div>
+          </div>
+          <div class="cs-telemetry-item">
+            <div class="telemetry-indicator calibrating"></div>
+            <div>
+              <strong id="telemetryItem2Title">Transponder Code Server</strong>
+              <span id="telemetryItem2Desc">Database Re-Indexing: 94%</span>
+            </div>
+          </div>
+          <div class="cs-telemetry-item">
+            <div class="telemetry-indicator online"></div>
+            <div>
+              <strong id="telemetryItem3Title">Roadside Mobile Units</strong>
+              <span id="telemetryItem3Desc">100% Active in Metro Zones</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Early Access VIP Notification Form -->
+        <div class="cs-notify-box">
+          <h3 class="cs-notify-title" id="notifyTitle">Get Notified At Launch &amp; Claim $25 Off First Service</h3>
+          <p class="cs-notify-subtitle" id="notifySubtitle">
+            Drop your email below to be the first to access Keyora 2.0 with priority roadside response.
+          </p>
+          <form class="cs-notify-form" id="csSubscribeForm" onsubmit="event.preventDefault(); handleNotifySubmit();">
+            <input type="email" class="cs-notify-input" id="notifyEmailInput" placeholder="Enter your email address..."
+              required>
+            <button type="submit" class="cs-notify-submit" id="notifyBtnText">
+              <span>Notify Me</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- 24/7 Roadside Alert & Override Notice -->
+        <div class="cs-emergency-override">
+          <div>
+            <h4>
+              <span class="pulse-indicator"></span>
+              Immediate Automotive Lockout or Lost Keys?
+            </h4>
+            <p>
+              Digital upgrades do not pause our roadside vans! Our certified locksmith technicians are on patrol 24/7
+              across all metropolitan zip codes.
+            </p>
+          </div>
+          <a href="tel:+18005555397" class="btn btn-gold" style="white-space:nowrap; padding:12px 24px; font-weight:800;">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <span>Call 24/7: (800) 555-5397</span>
+          </a>
+        </div>
+
+        <!-- Home and Navigation Shortcut -->
+        <div style="margin-top: 36px;">
+          <a href="index.html" class="btn btn-outline" style="display:inline-flex; align-items:center; gap:8px;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <span>Explore Current Website &amp; Services</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="coming-soon-footer">
+    <div class="container">
+      <div class="cs-footer-row">
+        <div>
+          &copy; 2026 Keyora Solutions LLC. Licensed, Bonded &amp; Insured Auto Locksmiths.
+        </div>
+        <div class="cs-footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing Guide</a>
+          <a href="about.html">About Fleet</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // State data for Dual Mode: Coming Soon vs Scheduled Maintenance
+    const pageModes = {
+      'coming-soon': {
+        badgeText: 'Deploying Keyora 2.0 Telematics Platform',
+        isMaintenance: false,
+        title: 'THE FUTURE OF <span class="text-gold">MOBILE CAR KEY</span> DISPATCH IS ARRIVING',
+        subtitle: 'We are preparing our next-generation automotive locksmith dispatch portal. Featuring live GPS patrol tracking, instant transponder quote calculation, and rapid key coding synchronization.',
+        progressLabel: 'Platform Deployment & Security Audit',
+        progressPercent: '88% Complete',
+        progressWidth: '88%',
+        telemetry1Title: 'Fleet GPS Telemetry',
+        telemetry1Desc: 'Real-Time Van Tracking Online',
+        telemetry2Title: 'Transponder Code Server',
+        telemetry2Desc: 'Database Re-Indexing: 94%',
+        telemetry3Title: 'Roadside Mobile Units',
+        telemetry3Desc: '100% Active in Metro Zones',
+        notifyTitle: 'Get Notified At Launch & Claim $25 Off First Service',
+        notifySubtitle: 'Drop your email below to be the first to access Keyora 2.0 with priority roadside response.',
+        notifyBtn: 'Notify Me',
+        targetDate: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000 + 8 * 60 * 60 * 1000)
+      },
+      'maintenance': {
+        badgeText: 'Scheduled Routine Maintenance In Progress',
+        isMaintenance: true,
+        title: 'ROUTINE SYSTEM <span class="text-gold">MAINTENANCE &amp; CALIBRATION</span>',
+        subtitle: 'We are currently calibrating our digital vehicle diagnostic servers and securing transponder EEPROM encryption protocols. Our web portal will be restored shortly.',
+        progressLabel: 'Routine Security & System Upgrades',
+        progressPercent: '94% Complete',
+        progressWidth: '94%',
+        telemetry1Title: 'Security Certificate Audit',
+        telemetry1Desc: '128-Bit Encryption Synchronized',
+        telemetry2Title: 'Database Migration',
+        telemetry2Desc: 'Final Verification In Progress',
+        telemetry3Title: 'Emergency Phone Dispatch',
+        telemetry3Desc: '100% Online & Taking Calls',
+        notifyTitle: 'Want An Alert When Maintenance Completes?',
+        notifySubtitle: 'Enter your email to receive an instant ping as soon as normal online booking resumes.',
+        notifyBtn: 'Send Me Status',
+        targetDate: new Date(Date.now() + 3 * 60 * 60 * 1000 + 45 * 60 * 1000)
+      }
+    };
+
+    let currentMode = 'coming-soon';
+    let targetCountdownDate = pageModes['coming-soon'].targetDate;
+
+    function switchMode(mode) {
+      if (!pageModes[mode]) return;
+      currentMode = mode;
+
+      const data = pageModes[mode];
+
+      // Update button toggle states
+      const btnCS = document.getElementById('btnModeComingSoon');
+      const btnMaint = document.getElementById('btnModeMaintenance');
+      if (mode === 'coming-soon') {
+        btnCS.classList.add('active');
+        btnCS.setAttribute('aria-selected', 'true');
+        btnMaint.classList.remove('active');
+        btnMaint.setAttribute('aria-selected', 'false');
+      } else {
+        btnMaint.classList.add('active');
+        btnMaint.setAttribute('aria-selected', 'true');
+        btnCS.classList.remove('active');
+        btnCS.setAttribute('aria-selected', 'false');
+      }
+
+      // Update badge
+      const badge = document.getElementById('csStatusBadge');
+      const badgeText = document.getElementById('csStatusText');
+      badgeText.textContent = data.badgeText;
+      if (data.isMaintenance) {
+        badge.classList.add('maintenance-active');
+      } else {
+        badge.classList.remove('maintenance-active');
+      }
+
+      // Update titles
+      document.getElementById('csMainTitle').innerHTML = data.title;
+      document.getElementById('csSubtitle').textContent = data.subtitle;
+
+      // Update progress
+      document.getElementById('progressLabel').textContent = data.progressLabel;
+      document.getElementById('progressPercent').textContent = data.progressPercent;
+      document.getElementById('progressBarFill').style.width = data.progressWidth;
+
+      // Update telemetry items
+      document.getElementById('telemetryItem1Title').textContent = data.telemetry1Title;
+      document.getElementById('telemetryItem1Desc').textContent = data.telemetry1Desc;
+      document.getElementById('telemetryItem2Title').textContent = data.telemetry2Title;
+      document.getElementById('telemetryItem2Desc').textContent = data.telemetry2Desc;
+      document.getElementById('telemetryItem3Title').textContent = data.telemetry3Title;
+      document.getElementById('telemetryItem3Desc').textContent = data.telemetry3Desc;
+
+      // Update notify box
+      document.getElementById('notifyTitle').textContent = data.notifyTitle;
+      document.getElementById('notifySubtitle').textContent = data.notifySubtitle;
+      document.getElementById('notifyBtnText').textContent = data.notifyBtn;
+
+      // Update countdown target date
+      targetCountdownDate = data.targetDate;
+      updateCountdown();
+
+      // Update URL hash without scroll
+      history.replaceState(null, null, '#' + mode);
+    }
+
+    // Live Real-Time Countdown Timer Function
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetCountdownDate.getTime() - now;
+
+      if (distance < 0) {
+        document.getElementById('timerDays').textContent = '00';
+        document.getElementById('timerHours').textContent = '00';
+        document.getElementById('timerMins').textContent = '00';
+        document.getElementById('timerSecs').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('timerDays').textContent = String(days).padStart(2, '0');
+      document.getElementById('timerHours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('timerMins').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('timerSecs').textContent = String(seconds).padStart(2, '0');
+    }
+
+    // Run countdown every second
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Check URL hash on load
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash === '#maintenance') {
+        switchMode('maintenance');
+      }
+    });
+
+    // Form submission feedback
+    function handleNotifySubmit() {
+      const input = document.getElementById('notifyEmailInput');
+      if (!input || !input.value.trim()) return;
+
+      const email = input.value.trim();
+      if (typeof showNotification === 'function') {
+        showNotification(
+          'VIP Registration Confirmed!',
+          `We will notify ${email} the instant this deployment finishes. $25 credit logged to your profile.`,
+          'success'
+        );
+      } else {
+        alert(`Thank you! Notification registered for ${email}.`);
+      }
+      input.value = '';
+    }
+  </script>
+</body>
+
+</html>

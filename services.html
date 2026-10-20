@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyora | Automotive Locksmith Services &amp; Key Programming</title>
+  <meta name="description" content="Keyora comprehensive mobile car key services: all keys lost replacement, push-to-start smart fobs, transponder coding, laser sidewinder cutting, and emergency lockout.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Emergency Topbar -->
+  <div class="emergency-topbar">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="emergency-tag"><span class="pulse-indicator"></span> 24/7 Mobile Dispatch Active</span>
+        <span>Avg. Arrival: <strong class="text-gold">18-25 Mins</strong></span>
+      </div>
+      <div class="topbar-info">
+        <span>Licensed, Bonded &amp; Insured Auto Locksmiths</span>
+        <span>&bull;</span>
+        <span>On-Site Key Cutting &amp; Programming</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerBrandLogo" title="Keyora Mobile Auto Locksmith">
+        <img src="images/keyora-logo.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-light" width="220" height="46">
+        <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-dark" width="220" height="46">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing Guide</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Right: Theme Toggle, RTL Toggle, Call Now Button, Mobile Toggle -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Light/Dark Theme">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">Dark</span>
+        </button>
+
+        <!-- RTL Toggle Button -->
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle RTL Direction" title="Toggle RTL / LTR Direction">
+          <span class="rtl-text">RTL</span>
+        </button>
+        <!-- CTA Button in LAST Position -->
+        <a href="contact.html" class="btn btn-call-now header-cta-btn" id="headerCtaBtn"
+          title="Contact Keyora 24/7 Dispatch">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <span>Contact Us</span>
+        </a>
+
+
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="180" height="38">
+      <button class="mobile-drawer-close" aria-label="Close Mobile Navigation"
+        style="background:none; border:none; color:#fff; font-size:1.8rem; cursor:pointer; line-height:1;">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="pricing.html">Pricing Guide</a>
+      <a href="blog.html">Blog &amp; Guides</a>
+      <a href="contact.html">Contact &amp; Emergency</a>
+    </div>
+    <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px;">
+      <a href="tel:+18005555397" class="btn btn-call-now" style="width:100%; justify-content:center;">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Call Now: (800) 555-5397</span>
+      </a>
+      <a href="contact.html" class="btn btn-gold" style="width:100%; justify-content:center;">
+        Book Service Online
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: Standardized Inner Hero Banner -->
+    <section class="inner-hero-banner">
+      <div class="container">
+        <div class="inner-hero-content">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <span>Services Directory</span>
+          </div>
+          <div class="inner-hero-badge">
+            <span class="badge-dot"></span>
+            Curbside Mobile Workshop &bull; 20-30 Min Rapid Dispatch
+          </div>
+          <h1 class="inner-hero-title">WHAT SERVICE DO YOU <span class="text-gold">NEED TODAY?</span></h1>
+          <p class="inner-hero-desc">
+            Complete automotive key origination, push-to-start programming, ignition repairs, and rapid damage-free vehicle lockouts delivered directly to your car.
+          </p>
+          <div class="hero-trust-bar">
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>20-30 Min Arrival</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              <span>100% Curbside &bull; Zero Towing</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>90-Day Comprehensive Warranty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 6-Card Interactive Situation Selector -->
+    <section class="section-padding-sm bg-dark-section" id="findYourService" style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+      <div class="container">
+        <div class="situation-selector-wrap">
+          <div class="situation-selector-title">
+            <span>Select Your Situation Below</span>
+          </div>
+
+          <div class="situation-grid-6">
+            <!-- Situation 1 -->
+            <a href="#keyReplacementService" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+                </div>
+                <span class="situation-badge">No Spare Key</span>
+              </div>
+              <div class="situation-user-problem">Situation: Lost All Keys</div>
+              <div class="situation-service-name">Complete Key Replacement</div>
+              <div class="situation-desc">You have zero working keys. We decode your VIN, cut new blades, and program new chips curbside.</div>
+              <div class="situation-card-action">View Replacement Service &rarr;</div>
+            </a>
+
+            <!-- Situation 2 -->
+            <a href="#lockoutService" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                </div>
+                <span class="situation-badge" style="background:rgba(239,68,68,0.2); color:#fca5a5; border-color:rgba(239,68,68,0.4);">20-Min Arrival</span>
+              </div>
+              <div class="situation-user-problem">Situation: Keys Inside Car</div>
+              <div class="situation-service-name">Emergency Vehicle Lockout</div>
+              <div class="situation-desc">Keys locked inside cabin or trunk. We unlock doors with zero paint, weatherstrip, or window damage.</div>
+              <div class="situation-card-action">View Lockout Service &rarr;</div>
+            </a>
+
+            <!-- Situation 3 -->
+            <a href="#keyFobProgramming" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-5-6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+                </div>
+                <span class="situation-badge">Push-to-Start</span>
+              </div>
+              <div class="situation-user-problem">Situation: Fob Not Working</div>
+              <div class="situation-service-name">Smart Fob Programming</div>
+              <div class="situation-desc">Push-to-start keyless remotes, remote engine start calibration, and aftermarket remote syncing.</div>
+              <div class="situation-card-action">View Fob Programming &rarr;</div>
+            </a>
+
+            <!-- Situation 4 -->
+            <a href="#spareKey" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6h16v12H4V6zm2 2v8h12V8H6zm3 2h6v4H9v-4z"/></svg>
+                </div>
+                <span class="situation-badge">Save Up To 40%</span>
+              </div>
+              <div class="situation-user-problem">Situation: Have 1 Key, Need Copy</div>
+              <div class="situation-service-name">Spare Key Duplication</div>
+              <div class="situation-desc">Protect yourself before you lose your only key. Rapid 60-second RFID chip cloning and blade cutting.</div>
+              <div class="situation-card-action">View Duplication Deals &rarr;</div>
+            </a>
+
+            <!-- Situation 5 -->
+            <a href="#ignitionRepair" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                </div>
+                <span class="situation-badge">Save $500+</span>
+              </div>
+              <div class="situation-user-problem">Situation: Key Snapped or Stuck</div>
+              <div class="situation-service-name">Ignition Repair &amp; Extraction</div>
+              <div class="situation-desc">Broken key lodged in lock, or key refuses to turn. We rebuild tumblers without replacing your steering column.</div>
+              <div class="situation-card-action">View Ignition Solutions &rarr;</div>
+            </a>
+
+            <!-- Situation 6 -->
+            <a href="#laserCutting" class="situation-card">
+              <div class="situation-card-top">
+                <div class="situation-card-icon">
+                  <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-4-4h3V7h2v6h3l-4 4z"/></svg>
+                </div>
+                <span class="situation-badge">0.01 mm Accuracy</span>
+              </div>
+              <div class="situation-user-problem">Situation: High-Security Blade</div>
+              <div class="situation-service-name">Laser Sidewinder Cutting</div>
+              <div class="situation-desc">Internal snake/wave track milling cut with computerized CNC precision inside our climate-controlled mobile lab.</div>
+              <div class="situation-card-action">View Laser Cutting &rarr;</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 1. Complete Car Key Replacement (All Keys Lost) -->
+    <section class="section-padding" id="keyReplacementService">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              SERVICE 01 &bull; ALL KEYS LOST RECOVERY
+            </span>
+            <h2 class="section-title">Complete Car Key Replacement</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle">
+              <strong>What it is:</strong> When you have zero working keys left, our mobile technician drives directly to your car, accesses your vehicle's factory cut code via the VIN, cuts a brand-new mechanical key, and programs the new transponder chip directly into your car's engine computer.
+            </p>
+
+            <!-- Dealership vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>Dealership Way</strong>
+                <span>Expensive tow truck ($150+), 3-7 days turnaround, pay $350-$600+.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Keyora Mobile Way</strong>
+                <span>We arrive in 20-30 mins, cut &amp; program on-site in 45 mins. Flat transparent rate.</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  All physical keys were lost, stolen, or dropped in water
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  You bought a used vehicle that only came with 1 valet key
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Car is stranded in a parking lot, driveway, or garage
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Need stolen keys wiped so old keys can never start the car
+                </li>
+              </ul>
+            </div>
+
+            <!-- What We Do On-Site (4-Step Process) -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Step 1</div>
+                <div class="process-step-title">Safe Entry</div>
+                <p class="process-step-text">Non-destructive door opening to access the vehicle cabin.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 2</div>
+                <div class="process-step-title">VIN Decoding</div>
+                <p class="process-step-text">Licensed NASTF database access retrieves factory bitting codes.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 3</div>
+                <div class="process-step-title">Laser Cut Blade</div>
+                <p class="process-step-text">Computerized CNC milling cuts physical key blade to factory spec.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 4</div>
+                <div class="process-step-title">Chip Coding</div>
+                <p class="process-step-text">OBD2 tablet links new chip to immobilizer and wipes lost keys.</p>
+              </div>
+            </div>
+
+            <!-- Supported Brands -->
+            <div class="brands-pill-wrap">
+              <span class="brands-pill-title">Vehicles Supported:</span>
+              <span class="brand-pill">Toyota</span>
+              <span class="brand-pill">Honda</span>
+              <span class="brand-pill">Ford</span>
+              <span class="brand-pill">Chevy</span>
+              <span class="brand-pill">Nissan</span>
+              <span class="brand-pill">Hyundai</span>
+              <span class="brand-pill">Kia</span>
+              <span class="brand-pill">Jeep</span>
+              <span class="brand-pill">Subaru</span>
+              <span class="brand-pill">BMW / Audi</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:28px;">
+              <a href="tel:+18005555397" class="btn btn-gold btn-lg">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call For Key Replacement
+              </a>
+              <a href="pricing.html" class="btn btn-outline-dark">Check Upfront Pricing</a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/service_key_replacement.jpg" alt="Automotive key replacement curbside service" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              </div>
+              <div>
+                <strong>100% Curbside Origination</strong>
+                <span>Never pay for a dealership tow truck</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: 2. Emergency Vehicle Lockout Assistance -->
+    <section class="section-padding bg-dark-section" id="lockoutService">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill" style="background:rgba(239,68,68,0.18); color:#fca5a5; border-color:rgba(239,68,68,0.4);">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              SERVICE 02 &bull; URGENT 20-MIN DISPATCH
+            </span>
+            <h2 class="section-title text-white">Emergency Vehicle Lockout Assistance</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle text-white" style="opacity:0.88;">
+              <strong>What it is:</strong> Keys locked in your car, trunk, or running ignition? Our mobile technician arrives in an average of 20 minutes to safely open your vehicle using specialized non-marring tools with 100% zero damage to your doors, paint, or weatherstripping.
+            </p>
+
+            <!-- Dealership / Tow vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>DIY / Tow Truck Wire Hangers</strong>
+                <span>Scratches door paint, tears weatherstrip rubber, can deploy side airbags.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Keyora Professional Locksmith</strong>
+                <span>Gentle air wedges &amp; surgical linkage tools. Guaranteed zero damage.</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Keys left on the seat, center console, or in the cup holder
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Trunk auto-locked with your groceries and keys inside
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Vehicle battery died and physical key blade does not turn
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  <strong style="color:#ef4444;">Code-Red:</strong> Child or pet locked inside car (Immediate priority!)
+                </li>
+              </ul>
+            </div>
+
+            <!-- Lockout Capabilities -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Type 1</div>
+                <div class="process-step-title">Standard Lockout</div>
+                <p class="process-step-text">Sedans, trucks, SUVs unlocked in under 5 minutes without scratches.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Type 2</div>
+                <div class="process-step-title">Trunk Lockouts</div>
+                <p class="process-step-text">Access locked trunks even when interior trunk releases are disabled.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Type 3</div>
+                <div class="process-step-title">Euro Deadlocks</div>
+                <p class="process-step-text">BMW, Mercedes, Audi double-deadlocks picked through lock cylinders.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Type 4</div>
+                <div class="process-step-title">Rapid Response</div>
+                <p class="process-step-text">Technicians stationed locally across the metro area for 20-min arrival.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:28px;">
+              <a href="tel:+18005555397" class="btn btn-gold btn-lg">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                DISPATCH 20-MIN LOCKOUT TECH
+              </a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/service_car_lockout.jpg" alt="Roadside Emergency Automotive Locksmith" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon" style="background:#e53e3e; color:#ffffff;">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              </div>
+              <div>
+                <strong>Active Roadside Patrol</strong>
+                <span>Average 20-minute response time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 3. Smart Key Fob & Remote Programming -->
+    <section class="section-padding" id="keyFobProgramming">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-5-6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+              SERVICE 03 &bull; ELECTRONICS &amp; PUSH-TO-START
+            </span>
+            <h2 class="section-title">Smart Key Fob &amp; Remote Programming</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle">
+              <strong>What it is:</strong> Modern cars use proximity sensors, push-button ignition, and encrypted wireless signals. If your remote stopped responding, you bought a replacement online, or you need an additional smart fob, we hook up dealership-grade OBD2 diagnostic tablets to pair and authenticate it in minutes.
+            </p>
+
+            <!-- Dealership vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>Dealership Programming</strong>
+                <span>Often refuses customer-provided fobs, charges $180+ just for programming labor.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Keyora Key Programming</strong>
+                <span>We program OEM, aftermarket, or your own customer-provided fobs right at your driveway.</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Vehicle displays "Key Not Detected" or refuses to start
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  You bought a key fob on Amazon/eBay and need it paired
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Remote lock/unlock buttons or trunk hatch stopped working
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Want remote engine start &amp; climate conditioning synchronized
+                </li>
+              </ul>
+            </div>
+
+            <!-- Fob Types Handled -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 1</div>
+                <div class="process-step-title">Passive Keyless (PKE)</div>
+                <p class="process-step-text">Proximity unlock as you approach + push-button engine ignition.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 2</div>
+                <div class="process-step-title">Remote Engine Start</div>
+                <p class="process-step-text">Pre-heat or cool your cabin from up to 500 feet away.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 3</div>
+                <div class="process-step-title">OEM &amp; Aftermarket</div>
+                <p class="process-step-text">Genuine OEM fobs or rugged military-grade value alternatives.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 4</div>
+                <div class="process-step-title">90-Day Warranty</div>
+                <p class="process-step-text">Every remote programming service includes full parts &amp; labor guarantee.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
+              <a href="tel:+18005555397" class="btn btn-gold">Call For Fob Programming</a>
+              <a href="pricing.html" class="btn btn-outline-dark">View Fob Pricing</a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/key_programming_tool.jpg" alt="OBD2 Diagnostic Key Programming Tablet" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              </div>
+              <div>
+                <strong>OBD2 Diagnostic Platform</strong>
+                <span>Pairs with BCM &amp; immobilizer in 15 mins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 4. Spare Key Duplication & Transponder Cloning -->
+    <section class="section-padding bg-light-section" id="spareKey">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65z"/></svg>
+              SERVICE 04 &bull; SPARE KEY &amp; CHIP DUPLICATION
+            </span>
+            <h2 class="section-title">Spare Key Duplication &amp; RFID Cloning</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle">
+              <strong>What it is:</strong> Having only one car key is an emergency waiting to happen. If you already have 1 working key, we can clone its internal RFID transponder chip and cut a secondary backup key in under 15 minutes at a fraction of the cost of replacing all lost keys.
+            </p>
+
+            <!-- Dealership vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>Waiting Until All Keys Are Lost</strong>
+                <span>Costs $250 to $500+, requires emergency roadside dispatch.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Getting a Spare Duplicate Today</strong>
+                <span>Starts at just $80 to $140. Up to 40% discount on 2nd key!</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  You only have ONE working car key right now
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Second family member, spouse, or teenager needs their own set
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Want an emergency mechanical blade kept in your wallet
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Need a clean duplicate before selling or trading in your car
+                </li>
+              </ul>
+            </div>
+
+            <!-- 4-Step Process -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Step 1</div>
+                <div class="process-step-title">Key Inspection</div>
+                <p class="process-step-text">Identify chip family (Megamos, Philips Hitag2, Texas Crypto 4D/8A).</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 2</div>
+                <div class="process-step-title">60-Sec Clone</div>
+                <p class="process-step-text">Read signature from working key and write directly to fresh chip.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 3</div>
+                <div class="process-step-title">Blade Duplication</div>
+                <p class="process-step-text">Optical scanning traces bitting cuts to mill identical groove.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 4</div>
+                <div class="process-step-title">Vehicle Verification</div>
+                <p class="process-step-text">Tested directly in door lock and ignition for 100% smooth operation.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:24px; display:flex; gap:14px; flex-wrap:wrap;">
+              <a href="tel:+18005555397" class="btn btn-dark">Get A Spare Key Made</a>
+              <a href="pricing.html" class="btn btn-outline-dark">Check Duplication Discounts</a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/hero_car_key.jpg" alt="Transponder car key replacement with microchip" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+              </div>
+              <div>
+                <strong>60-Second RFID Cloning</strong>
+                <span>Duplicate keys made instantly without ECU flashing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: 5. Ignition Repair & Broken Key Extraction -->
+    <section class="section-padding bg-dark-section" id="ignitionRepair">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill" style="background:rgba(245,158,11,0.18); color:#fbbf24; border-color:rgba(245,158,11,0.4);">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              SERVICE 05 &bull; SPECIALIZED MECHANICAL REPAIR
+            </span>
+            <h2 class="section-title text-white">Ignition Repair &amp; Broken Key Extraction</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle text-white" style="opacity:0.88;">
+              <strong>What it is:</strong> If your key snapped in half inside the door or ignition cylinder, or your key will no longer turn to the "ON" position, don't spend thousands at a repair shop to replace your entire steering column. We extract the broken blade without damage and rebuild sticky ignition wafers on-site.
+            </p>
+
+            <!-- Dealership vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>Dealership Column Replacement</strong>
+                <span>Replaces steering column &amp; ignition, costs $800â€“$1,500, leaves you with 2 separate keys.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Keyora On-Site Cylinder Rebuild</strong>
+                <span>Saves original cylinder, rekeys to your original door key (1-key solution), saves $600+.</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Metal key snapped off inside the ignition switch or door lock
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Key refuses to turn past the "ACC" or "LOCK" position
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Common Honda, Ford, and Chevy sticky tumbler failures
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Key pulls out of ignition while the engine is still running
+                </li>
+              </ul>
+            </div>
+
+            <!-- 4-Step Process -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Step 1</div>
+                <div class="process-step-title">Surgical Extraction</div>
+                <p class="process-step-text">Micro-hook extractors pull snapped pieces without scratching cylinder.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 2</div>
+                <div class="process-step-title">Wafer Inspection</div>
+                <p class="process-step-text">Diagnose bent, worn, or mushroomed brass lock tumblers and springs.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 3</div>
+                <div class="process-step-title">Cylinder Rekey</div>
+                <p class="process-step-text">Install brand new hardened wafers matched to your original key code.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Step 4</div>
+                <div class="process-step-title">Fresh Cut Key</div>
+                <p class="process-step-text">Cut a brand-new factory-spec key to eliminate future wear and sticking.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;">
+              <a href="tel:+18005555397" class="btn btn-gold btn-lg">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call For Ignition Help: (800) 555-5397
+              </a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/roadside_locksmith_service.jpg" alt="Automotive ignition rebuild and key extraction" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              </div>
+              <div>
+                <strong>1-Key Solution Preserved</strong>
+                <span>Keep one key for doors and ignition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: 6. High-Security Laser Sidewinder Key Cutting -->
+    <section class="section-padding" id="laserCutting">
+      <div class="container">
+        <div class="showcase-split">
+          <div class="showcase-content-box">
+            <span class="service-badge-pill">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-4-4h3V7h2v6h3l-4 4z"/></svg>
+              SERVICE 06 &bull; COMPUTERIZED CNC MILLING
+            </span>
+            <h2 class="section-title">High-Security Laser Key Cutting</h2>
+            <div class="gold-divider left"></div>
+            <p class="section-subtitle">
+              <strong>What it is:</strong> Unlike older keys with jagged notches cut along the outer edges, modern "laser cut" or "sidewinder" keys have a wavy internal track routed down the center of a thick blade. We mill these using computer-guided electronic CNC cutters inside our mobile lab accurate to 0.01 mm.
+            </p>
+
+            <!-- Hardware Store vs Keyora Comparison -->
+            <div class="compare-dealer-strip">
+              <div class="compare-dealer-side">
+                <strong>Hardware Store Kiosks</strong>
+                <span>Only copy physical wear &amp; burrs, cannot cut high-security internal laser tracks.</span>
+              </div>
+              <div class="compare-keyora-side">
+                <strong>Keyora Computerized CNC Cutter</strong>
+                <span>Laser optical scanner decodes original factory depth. Cuts burr-free nickel-silver blanks.</span>
+              </div>
+            </div>
+
+            <!-- When You Need This Service -->
+            <div class="service-scenarios-box">
+              <div class="service-scenarios-header">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                When Do You Need This Service?
+              </div>
+              <ul class="service-scenarios-list">
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Vehicle uses internal track keys (Honda high-security, VW/Audi, Ford, Toyota)
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Current key is worn down and catches or sticks in the lock
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Need a flip-key or emergency valet blade inserted into your smart fob
+                </li>
+                <li>
+                  <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                  Key cut to code without needing an original template key
+                </li>
+              </ul>
+            </div>
+
+            <!-- Features -->
+            <div class="service-process-flow">
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 1</div>
+                <div class="process-step-title">Optical Decoder</div>
+                <p class="process-step-text">Calculates original cuts to reverse 10 years of pocket wear.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 2</div>
+                <div class="process-step-title">Carbide Milling</div>
+                <p class="process-step-text">12,000 RPM spindle carves mirror-smooth tracks with no rough burrs.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 3</div>
+                <div class="process-step-title">5-Minute Cut Time</div>
+                <p class="process-step-text">Automated milling cycles produce finished keys in under 5 minutes.</p>
+              </div>
+              <div class="process-step-item">
+                <div class="process-step-num">Feature 4</div>
+                <div class="process-step-title">Lifetime Cut Guarantee</div>
+                <p class="process-step-text">Guaranteed butter-smooth ignition turn or we recut free of charge.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;">
+              <a href="pricing.html" class="btn btn-gold">Laser Key Pricing Guide</a>
+            </div>
+          </div>
+
+          <div class="showcase-image-box">
+            <img src="images/key_cutting_machine.jpg" alt="Automated CNC key cutter milling sidewinder key" width="600" height="420">
+            <div class="showcase-floating-badge">
+              <div class="showcase-badge-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              </div>
+              <div>
+                <strong>0.01 mm CNC Tolerance</strong>
+                <span>Guaranteed butter-smooth lock and ignition turn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Interactive Booking CTA -->
+    <section class="section-padding bg-dark-section" id="servicesCta" style="border-top:2px solid var(--color-gold);">
+      <div class="container">
+        <div style="max-width:820px; margin:0 auto; text-align:center;">
+          <div class="badge-diagonal badge-diagonal-dark">Mobile Fleet On Standby</div>
+          <h2 class="section-title text-white">Need Professional Key Service Today?</h2>
+          <div class="gold-divider"></div>
+          <p class="section-subtitle text-white" style="margin-bottom:32px; opacity:0.9;">
+            Our mobile locksmith units are patrolling your local area right now with fully equipped vans. Call our priority dispatch line or view our transparent pricing matrix.
+          </p>
+
+          <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:28px;">
+            <a href="tel:+18005555397" class="btn btn-gold btn-lg">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (800) 555-KEYS (5397)
+            </a>
+            <a href="pricing.html" class="btn btn-outline-gold btn-lg">Check Estimated Pricing</a>
+          </div>
+
+          <!-- Trust Badges Row -->
+          <div style="display:flex; justify-content:center; align-items:center; gap:24px; flex-wrap:wrap; color:rgba(255,255,255,0.7); font-size:0.88rem;">
+            <span>&#10003; Licensed &amp; Insured</span>
+            <span>&bull;</span>
+            <span>&#10003; 90-Day Parts &amp; Labor Warranty</span>
+            <span>&bull;</span>
+            <span>&#10003; Upfront Honest Flat Rates</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid-4">
+        <!-- Col 1: Brand & Description -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo footer-brand-link" aria-label="Keyora Home" title="Keyora Mobile Auto Locksmith">
+            <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="220" height="46">
+          </a>
+          <p class="footer-about-text">
+            Keyora is your trusted local mobile car key programming and replacement service. Fully equipped on-site locksmith vans providing fast, 20-minute roadside dispatch for laser-cut keys, smart transponder fobs, EEPROM reflashing, and damage-free vehicle lockouts.
+          </p>
+          <div class="footer-hotline-box">
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold); font-weight:700; letter-spacing:0.04em;">24/7 Emergency Dispatch</div>
+            <a href="tel:+18005555397" style="font-family:var(--font-heading); font-size:1.35rem; font-weight:900; color:#ffffff; display:inline-flex; align-items:center; gap:8px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (800) 555-5397
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="footer-col">
+          <h4>Key Services</h4>
+          <div class="footer-links-list">
+            <a href="services.html">Car Key Replacement</a>
+            <a href="services.html">Smart Key Fob Programming</a>
+            <a href="services.html">Transponder Chip Coding</a>
+            <a href="services.html">High-Security Laser Cutting</a>
+            <a href="services.html">Emergency Car Lockout</a>
+            <a href="services.html">Broken Key Extraction</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About Keyora Fleet</a>
+            <a href="pricing.html">Pricing Guide</a>
+            <a href="blog.html">Blog &amp; Advice</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Service Areas & Hours -->
+        <div class="footer-col">
+          <h4>Mobile Coverage &amp; Hours</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong style="color:#fff;">Service Radius:</strong>
+              <div>Metropolitan County &amp; 50-Mile Surrounding Region</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <div>
+              <strong style="color:#fff;">Operating Hours:</strong>
+              <div>Open 24/7/365 Emergency Roadside Units Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2026 Keyora Solutions LLC. Licensed Auto Locksmith. All Rights Reserved.</div>
+        <div style="display:flex; gap:20px;">
+          <a href="contact.html#privacy">Privacy Policy</a>
+          <a href="contact.html#terms">Terms of Service</a>
+          <a href="contact.html#warranty">Warranty Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

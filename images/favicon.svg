@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181c26"/>
+      <stop offset="100%" stop-color="#0a0c12"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Shield/Pill -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#darkBg)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <!-- Key Fob Head -->
+  <path d="M32 10 C22 10 16 16 16 26 C16 34 22 41 28 43 L28 50 L32 54 L36 50 L36 46 L39 46 L39 43 L36 43 C42 41 48 34 48 26 C48 16 42 10 32 10 Z" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Central Security Keyhole & Signal Waves -->
+  <circle cx="32" cy="24" r="5" fill="url(#goldGrad)"/>
+  <path d="M30 25 L34 25 L35 34 L29 34 Z" fill="url(#goldGrad)"/>
+  <!-- Top Remote Signal Arc -->
+  <path d="M25 15 C29 13 35 13 39 15" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

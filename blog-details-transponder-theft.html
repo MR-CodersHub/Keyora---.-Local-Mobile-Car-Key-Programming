@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyora | How 128-Bit Rolling Transponders Stop Modern Relay Car Theft</title>
+  <meta name="description" content="Learn how 128-bit rolling cryptographic transponders protect modern push-to-start vehicles from relay antenna theft and signal amplification attacks with Keyora.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Emergency Topbar -->
+  <div class="emergency-topbar">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="emergency-tag"><span class="pulse-indicator"></span> 24/7 Mobile Dispatch Active</span>
+        <span>Avg. Arrival: <strong class="text-gold">18-25 Mins</strong></span>
+      </div>
+      <div class="topbar-info">
+        <span>Licensed, Bonded &amp; Insured Auto Locksmiths</span>
+        <span>•</span>
+        <span>Advanced Automotive Cybersecurity &amp; Anti-Theft</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="headerBrandLogo" title="Keyora Mobile Auto Locksmith">
+        <img src="images/keyora-logo.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-light" width="220" height="46">
+        <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img logo-dark" width="220" height="46">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing Guide</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Right: Theme Toggle, RTL Toggle, Call Now Button, Mobile Toggle -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Switch Light/Dark Theme">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">Dark</span>
+        </button>
+
+        <!-- RTL Toggle Button -->
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle RTL Direction" title="Toggle RTL / LTR Direction">
+          <span class="rtl-text">RTL</span>
+        </button>
+        <!-- CTA Button in LAST Position -->
+        <a href="contact.html" class="btn btn-call-now header-cta-btn" id="headerCtaBtn"
+          title="Contact Keyora 24/7 Dispatch">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <span>Contact Us</span>
+        </a>
+
+
+        
+
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Open Mobile Menu">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="180" height="38">
+      <button class="mobile-drawer-close" style="background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing Guide</a>
+      <a href="blog.html" class="active">Blog &amp; Guides</a>
+      <a href="contact.html">Contact &amp; Emergency</a>
+    </div>
+    <div style="margin-top: 30px; display:flex; flex-direction:column; gap:12px;">
+      <a href="tel:+18005555397" class="btn btn-call-now" style="width:100%; justify-content:center;">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Call (800) 555-5397</span>
+      </a>
+      <a href="contact.html" class="btn btn-gold" style="width:100%; text-align:center;">
+        Book Service Online
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <main>
+    <!-- Standardized Inner Hero Banner (380px) -->
+    <section class="inner-hero-banner">
+      <div class="container">
+        <div class="inner-hero-content">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="blog.html">Blog &amp; Guides</a>
+            <span class="separator">/</span>
+            <span>Rolling Transponders &amp; Theft</span>
+          </div>
+          <div class="inner-hero-badge">
+            <span class="badge-dot"></span>
+            Automotive Anti-Theft &bull; Cybersecurity
+          </div>
+          <h1 class="inner-hero-title">HOW 128-BIT TRANSPONDERS <span class="text-gold">STOP RELAY THEFT</span></h1>
+          <p class="inner-hero-desc">
+            An engineering look at rolling cryptographic tokens, high-security immobilizer handshakes, and simple everyday habits to protect your vehicle from radio signal theft.
+          </p>
+          <div class="hero-trust-bar">
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>By Tariq Khan, EEPROM Specialist</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>Published Oct 04, 2026</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              <span>6-Min Read &bull; Security Guide</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Article Layout -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="article-page-layout">
+
+          <!-- Left Column -->
+          <article class="article-main-body">
+
+            <div class="article-lead-box">
+              &ldquo;With keyless entry vehicles, car theft has shifted from crowbars and hot-wiring to wireless radio frequency relay amplifiers. Understanding how 128-bit rolling encryption defends your car is the key to preventing modern driveway theft.&rdquo;
+            </div>
+
+            <div class="article-featured-banner-img">
+              <img src="images/key_programming_tool.jpg" alt="Automotive key programming tool pairing 128-bit rolling transponder" width="850" height="460">
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="article-toc-box">
+              <div class="article-toc-title">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                Table of Contents
+              </div>
+              <ul class="article-toc-list">
+                <li><a href="#toc-relay-attack">&bull; 1. What Is a "Relay Attack" on Keyless Cars?</a></li>
+                <li><a href="#toc-cryptography">&bull; 2. How 128-Bit AES Rolling Code Cryptography Works</a></li>
+                <li><a href="#toc-ultra-wideband">&bull; 3. The Newest Weapon: Ultra-Wideband (UWB) Time-of-Flight</a></li>
+                <li><a href="#toc-locksmith-wipe">&bull; 4. Why You Must Erase Lost Keys When Fobs Are Stolen</a></li>
+                <li><a href="#toc-prevention-tips">&bull; 5. 4 Simple Habits to Protect Your Vehicle at Home</a></li>
+              </ul>
+            </div>
+
+            <h2 id="toc-relay-attack">1. What Is a "Relay Attack" on Keyless Cars?</h2>
+            <p>
+              In a relay attack, two thieves operate in tandem using high-gain radio frequency transceivers:
+            </p>
+            <ul>
+              <li><strong>Thief 1</strong> stands outside your front door or window with an amplifier antenna, capturing the faint standby ping from your smart key resting on the hall table.</li>
+              <li><strong>Thief 2</strong> stands next to your car in the driveway holding a companion receiver.</li>
+            </ul>
+            <p>
+              The amplifier bridges the 40-foot distance in milliseconds, fooling the vehicle into thinking the owner is standing right next to the driver door with the key. The car unlocks, push-to-start activates, and the thieves drive away in under 60 seconds without ever touching your physical keys.
+            </p>
+
+            <div class="article-alert-box warning">
+              <div class="article-alert-icon">&#9888;</div>
+              <div class="article-alert-content">
+                <h4>Are You Leaving Your Fob Near the Front Entryway?</h4>
+                <p>
+                  Over 78% of relay thefts occur between 1:00 AM and 4:00 AM because car owners hang their key rings on wall hooks or drop them in decorative bowls within 15 feet of front doors or exterior walls.
+                </p>
+              </div>
+            </div>
+
+            <h2 id="toc-cryptography">2. How 128-Bit AES Rolling Code Cryptography Works</h2>
+            <p>
+              To counter replay attacks, tier-1 automotive suppliers (Bosch, Denso, Continental) implemented 128-bit Advanced Encryption Standard (AES) rolling transponders.
+            </p>
+            <p>
+              Older fixed-code chips broadcasted the exact same radio ID string every time. Today, the transponder and car ECU share a secret 128-bit cryptographic key. When the car transmits a random challenge number (e.g. <code>9F82A4...</code>), the fob calculates an encrypted response hash. Once verified, both modules step their internal counter forward. If a radio interceptor records that transmission, it is already invalid by the time they attempt to replay it.
+            </p>
+
+            <h2 id="toc-ultra-wideband">3. The Newest Weapon: Ultra-Wideband (UWB) Time-of-Flight</h2>
+            <p>
+              Beginning with 2022+ BMW, Audi, Genesis, and Ford models, manufacturers introduced Ultra-Wideband (UWB) chips. UWB does not just measure radio signal strength (which amplifiers can fake); it measures the speed-of-light <strong>time-of-flight</strong> down to picoseconds.
+            </p>
+            <p>
+              Because radio waves cannot travel faster than the speed of light, the milliseconds added by a relay antenna reveal to the vehicle computer that the key is actually 40 feet away inside the house, instantly aborting ignition permission.
+            </p>
+
+            <h2 id="toc-locksmith-wipe">4. Why You Must Erase Lost Keys When Fobs Are Stolen</h2>
+            <p>
+              If your purse or backpack was stolen with your car keys inside, having a new key cut is only half the job.
+            </p>
+            <p>
+              A certified automotive locksmith plugs into your car's OBD-II port to execute an <strong>All-Keys-Wipe Protocol</strong>. This deletes every registered transponder ID stored in the Body Control Module and re-registers only the keys currently in your possession. If the thief returns with your old fob, the immobilizer blocks fuel delivery and the engine will not turn over.
+            </p>
+
+            <h2 id="toc-prevention-tips">5. 4 Simple Habits to Protect Your Vehicle at Home</h2>
+            <div class="article-steps-workflow">
+              <div class="article-step-card">
+                <div class="article-step-num">1</div>
+                <div class="article-step-details">
+                  <h4>Use a Faraday RF Blocking Pouch or Box</h4>
+                  <p>A dual-layer metallic mesh pouch blocks 100% of RF transmission, rendering amplifier tools completely blind.</p>
+                </div>
+              </div>
+              <div class="article-step-card">
+                <div class="article-step-num">2</div>
+                <div class="article-step-details">
+                  <h4>Disable Key Fob Sleep Mode (On Supported Makes)</h4>
+                  <p>Many Mercedes, Toyota, and BMW smart keys allow you to put the fob to sleep by double-pressing lock while holding unlock.</p>
+                </div>
+              </div>
+              <div class="article-step-card">
+                <div class="article-step-num">3</div>
+                <div class="article-step-details">
+                  <h4>Store Keys at Least 25 Feet from Exterior Walls</h4>
+                  <p>Moving keys to a kitchen drawer or interior bedroom dramatically reduces amplifier pickup sensitivity.</p>
+                </div>
+              </div>
+              <div class="article-step-card">
+                <div class="article-step-num">4</div>
+                <div class="article-step-details">
+                  <h4>Program a Spare Key Before You Lose Your Last One</h4>
+                  <p>Adding a spare key takes 15 minutes and costs half as much as an emergency all-keys-lost recovery.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="article-author-bio">
+              <div class="author-bio-avatar">TK</div>
+              <div class="author-bio-info">
+                <h4>Tariq Khan</h4>
+                <div class="author-bio-tagline">Automotive EEPROM &amp; CAN-Bus Diagnostician</div>
+                <p class="author-bio-text">
+                  Tariq specializes in European automotive micro-soldering, immobilizer CAN-bus reverse-engineering, and vehicle cybersecurity forensics at Keyora.
+                </p>
+              </div>
+            </div>
+
+            <!-- Navigation Pager -->
+            <div class="article-nav-pager">
+              <a href="blog-details-laser-cut.html" class="article-pager-link">
+                <div class="article-pager-direction">&larr; Previous Guide</div>
+                <div class="article-pager-title">Laser Cut Keys vs. Standard Edge Keys</div>
+              </a>
+              <a href="blog-details-mobile-van.html" class="article-pager-link" style="text-align:right;">
+                <div class="article-pager-direction">Next Guide &rarr;</div>
+                <div class="article-pager-title">Inside a Mobile Locksmith Rolling Lab</div>
+              </a>
+            </div>
+
+            <!-- Comments Area -->
+            <div class="article-comments-area">
+              <div class="comments-header-row">
+                <h3 style="margin:0; font-size:1.4rem;">Reader Questions (2)</h3>
+                <span style="font-size:0.85rem; color:var(--color-text-muted);">Share your feedback</span>
+              </div>
+              <div class="comment-list">
+                <div class="comment-item">
+                  <div class="comment-header">
+                    <div class="comment-author-name">Jennifer Boyd</div>
+                    <span class="comment-date">1 week ago</span>
+                  </div>
+                  <p class="comment-text">
+                    I bought a Faraday box on Amazon for $15 after reading about relay attacks on Lexus SUVs. Tested it by holding the box right against my car door handle—car stayed locked! Great practical advice.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Right Column: Sidebar -->
+          <aside class="article-sticky-sidebar">
+            <div class="sidebar-dispatch-card">
+              <div class="sidebar-dispatch-badge">
+                <span class="pulse-indicator"></span> 24/7 Security Dispatch
+              </div>
+              <h3 class="sidebar-dispatch-title">Stolen Key? We Wipe Lost Keys On-Site</h3>
+              <p class="sidebar-dispatch-desc">
+                If your keys were stolen, don't wait. We can erase all old key memory and program fresh cryptographic keys immediately.
+              </p>
+              <a href="tel:+18005555397" class="sidebar-phone-btn">
+                CALL (800) 555-5397
+              </a>
+              <a href="contact.html" class="btn btn-outline-gold" style="width:100%; text-align:center; display:block; margin-bottom:14px;">
+                Request Security Service &rarr;
+              </a>
+            </div>
+
+            <div class="sidebar-widget">
+              <h4 class="sidebar-widget-title">Trending Guides</h4>
+              <div class="sidebar-trending-list">
+                <a href="blog-details.html" class="sidebar-trending-item">
+                  <div class="sidebar-trending-thumb">
+                    <img src="images/smart_fob_lineup.jpg" alt="All keys lost guide">
+                  </div>
+                  <div class="sidebar-trending-info">
+                    <h5>What To Do When You Lose Your ONLY Key Fob</h5>
+                    <span>7 Min Read</span>
+                  </div>
+                </a>
+                <a href="blog-details-expensive-keys.html" class="sidebar-trending-item">
+                  <div class="sidebar-trending-thumb">
+                    <img src="images/hero_car_key.jpg" alt="Why are key fobs expensive">
+                  </div>
+                  <div class="sidebar-trending-info">
+                    <h5>Why Are Key Fobs So Expensive?</h5>
+                    <span>5 Min Read</span>
+                  </div>
+                </a>
+                <a href="blog-details-laser-cut.html" class="sidebar-trending-item">
+                  <div class="sidebar-trending-thumb">
+                    <img src="images/key_cutting_machine.jpg" alt="Laser cut keys guide">
+                  </div>
+                  <div class="sidebar-trending-info">
+                    <h5>Laser Cut vs Standard Edge Keys</h5>
+                    <span>4 Min Read</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="main-footer site-footer">
+    <div class="container">
+      <div class="footer-grid-4">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo footer-brand-link" aria-label="Keyora Home" title="Keyora Mobile Auto Locksmith">
+            <img src="images/keyora-logo-white.svg" alt="Keyora Mobile Auto Locksmith" class="brand-logo-img" width="220" height="46">
+          </a>
+          <p class="footer-about-text">
+            Keyora is your licensed, on-demand local mobile car key programming and laser-cutting locksmith. Rapid roadside dispatch across the metropolitan area.
+          </p>
+          <div class="footer-hotline-box">
+            <div style="font-size:0.75rem; text-transform:uppercase; color:var(--color-gold); font-weight:700; letter-spacing:0.04em;">24/7 Emergency Dispatch</div>
+            <a href="tel:+18005555397" style="font-family:var(--font-heading); font-size:1.35rem; font-weight:900; color:#ffffff; display:inline-flex; align-items:center; gap:8px;">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (800) 555-5397
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Key Replacement Services</h4>
+          <div class="footer-links-list">
+            <a href="services.html">Push-to-Start Smart Keys</a>
+            <a href="services.html">Remote Fob Programming</a>
+            <a href="services.html">Transponder Chip Coding</a>
+            <a href="services.html">High-Security Laser Cutting</a>
+            <a href="services.html">Emergency Car Lockout</a>
+            <a href="services.html">Ignition Lock Cylinder Repair</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing Guide</a>
+            <a href="blog.html">Blog &amp; Advice</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Rapid Dispatch &amp; Hours</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>
+              <strong style="color:#fff;">Coverage Area:</strong>
+              <div>50-Mile Metropolitan Radius &amp; All Surrounding Counties</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <div>
+              <strong style="color:#fff;">Business Hours:</strong>
+              <div>24/7/365 On-Call Roadside Dispatch</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2026 Keyora Solutions LLC. Licensed Auto Locksmith. All Rights Reserved.</div>
+        <div style="display:flex; gap:20px;">
+          <a href="contact.html#privacy">Privacy Policy</a>
+          <a href="contact.html#terms">Terms of Service</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA Floating Bar -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
